@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,33 +12,50 @@
             background-color: #1a202c;
             color: #e2e8f0;
         }
+
         .dark-mode .card {
             background-color: #2d3748;
         }
-        .dark-mode input, .dark-mode select, .dark-mode textarea {
+
+        .dark-mode input,
+        .dark-mode select,
+        .dark-mode textarea {
             background-color: #4a5568;
             color: #e2e8f0;
             border-color: #4a5568;
         }
+
         .badge-earned {
             animation: badgePop 0.5s ease;
         }
+
         @keyframes badgePop {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.2); }
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
         }
+
         .calendar-day {
             min-height: 120px;
         }
+
         .workout-item {
             transition: all 0.3s ease;
         }
+
         .workout-item:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
+
 <body class="bg-gray-200 transition-colors duration-300">
     <div id="app" class="min-h-screen">
         <!-- Navigation -->
@@ -45,29 +63,37 @@
             <div class="container mx-auto px-4 py-4 flex justify-between items-center">
                 <h1 class="text-2xl font-bold">💪 FitTrack Pro</h1>
                 <div class="flex gap-4 items-center">
-                                        <span id="streakDisplay" class="bg-yellow-500 text-black px-3 py-1 rounded-full font-semibold">🔥 0 Day Streak</span>
-
-                    <button id="darkModeToggle" class="bg-gray-800 px-4 py-2 rounded hover:bg-gray-700 transition">🌙 Dark</button>
+                    <span id="streakDisplay" class="bg-yellow-500 text-black px-3 py-1 rounded-full font-semibold">🔥 0
+                        Day Streak</span>
+                    <button id="darkModeToggle" class="bg-gray-800 px-4 py-2 rounded hover:bg-gray-700 transition">🌙
+                        Dark</button>
                 </div>
             </div>
         </nav>
 
-    <!-- Tab Navigation -->
+        <!-- Tab Navigation -->
         <div class="container mx-auto px-4 mt-6">
             <div class="flex gap-2 overflow-x-auto pb-2">
-                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition" data-tab="dashboard">Dashboard</button>
-                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition" data-tab="calendar">Calendar</button>
-                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition" data-tab="metrics">Metrics</button>
-                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition" data-tab="calories">Calories</button>
-                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition" data-tab="history">History</button>
-                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition" data-tab="timer">Timer</button>
-                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition" data-tab="exercises">Exercises</button>
+                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+                    data-tab="dashboard">Dashboard</button>
+                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+                    data-tab="calendar">Calendar</button>
+                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+                    data-tab="metrics">Metrics</button>
+                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+                    data-tab="calories">Calories</button>
+                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+                    data-tab="history">History</button>
+                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+                    data-tab="timer">Timer</button>
+                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+                    data-tab="exercises">Exercises</button>
             </div>
         </div>
 
         <!-- Main Content -->
         <div class="container mx-auto px-4 py-6">
-            
+
             <!-- Dashboard Tab -->
             <div id="dashboard" class="tab-content">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -84,7 +110,7 @@
                         <h3 class="text-lg font-semibold mb-2">🎯 Current Level</h3>
                         <p id="userLevel" class="text-2xl font-bold text-green-600 italic">Beginner</p>
                     </div>
-                </div>  
+                </div>
 
                 <!-- Achievements -->
                 <div class="card bg-white p-6 rounded-lg shadow mt-6">
@@ -107,13 +133,13 @@
                     <div class="flex justify-between items-center mb-4">
                         <h3 class="text-xl font-bold">📅 Weekly Workout Calendar</h3>
                         <select id="levelSelect" class="border rounded px-3 py-2" aria-label="Workout difficulty level>
-                            <option value="Beginner">Beginner</option>
+                            <option value=" Beginner">Beginner</option>
                             <option value="Intermediate">Intermediate</option>
                             <option value="Advanced">Advanced</option>
                         </select>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-7 gap-2" id="calendarGrid">
-                        
+
                     </div>
                 </div>
 
@@ -130,11 +156,16 @@
                             <option value="Saturday">Saturday</option>
                             <option value="Sunday">Sunday</option>
                         </select>
-                        <input type="text" id="workoutName" placeholder="Workout name (e.g., Leg Day)" class="border rounded px-3 py-2">
-                        <input type="number" id="workoutDuration" placeholder="Duration (minutes)" class="border rounded px-3 py-2">
-                        <input type="number" id="workoutCalories" placeholder="Estimated calories" class="border rounded px-3 py-2">
+                        <input type="text" id="workoutName" placeholder="Workout name (e.g., Leg Day)"
+                            class="border rounded px-3 py-2">
+                        <input type="number" id="workoutDuration" placeholder="Duration (minutes)"
+                            class="border rounded px-3 py-2">
+                        <input type="number" id="workoutCalories" placeholder="Estimated calories"
+                            class="border rounded px-3 py-2">
                     </div>
-                    <button id="addWorkoutBtn" type="button" class="bg-blue-600 text-white px-6 py-2 rounded mt-4 hover:bg-blue-700 transition">Add Workout</button>
+                    <button id="addWorkoutBtn" type="button"
+                        class="bg-blue-600 text-white px-6 py-2 rounded mt-4 hover:bg-blue-700 transition">Add
+                        Workout</button>
                 </div>
             </div>
 
@@ -143,20 +174,28 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="card bg-white p-6 rounded-lg shadow">
                         <h3 class="text-xl font-bold mb-4 text-green-600">📏 BMI Calculator</h3>
-                        <input type="number" id="bmiWeight" placeholder="Weight (kg)" class="border rounded px-3 py-2 w-full mb-3">
-                        <input type="number" id="bmiHeight" placeholder="Height (cm)" class="border rounded px-3 py-2 w-full mb-3">
-                        <button id="calcBMI" class="bg-green-600 text-white px-6 py-2 rounded w-full hover:bg-green-700 transition">Calculate BMI</button>
+                        <input type="number" id="bmiWeight" placeholder="Weight (kg)"
+                            class="border rounded px-3 py-2 w-full mb-3">
+                        <input type="number" id="bmiHeight" placeholder="Height (cm)"
+                            class="border rounded px-3 py-2 w-full mb-3">
+                        <button id="calcBMI"
+                            class="bg-green-600 text-white px-6 py-2 rounded w-full hover:bg-green-700 transition">Calculate
+                            BMI</button>
                     </div>
                     <div class="card bg-white p-6 rounded-lg shadow">
                         <h3 class="text-xl font-bold mb-4 text-green-600">🔥 BMR Calculator</h3>
-                        <input type="number" id="bmrWeight" placeholder="Weight (kg)" class="border rounded px-3 py-2 w-full mb-3">
-                        <input type="number" id="bmrHeight" placeholder="Height (cm)" class="border rounded px-3 py-2 w-full mb-3">
+                        <input type="number" id="bmrWeight" placeholder="Weight (kg)"
+                            class="border rounded px-3 py-2 w-full mb-3">
+                        <input type="number" id="bmrHeight" placeholder="Height (cm)"
+                            class="border rounded px-3 py-2 w-full mb-3">
                         <input type="number" id="bmrAge" placeholder="Age" class="border rounded px-3 py-2 w-full mb-3">
                         <select id="bmrGender" class="border rounded px-3 py-2 w-full mb-3">
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                         </select>
-                        <button id="calcBMR" class="bg-green-600 text-white px-6 py-2 rounded w-full hover:bg-green-700 transition">Calculate BMR</button>
+                        <button id="calcBMR"
+                            class="bg-green-600 text-white px-6 py-2 rounded w-full hover:bg-green-700 transition">Calculate
+                            BMR</button>
                         <div id="bmrResult" class="mt-4 text-center font-bold text-2xl"></div>
                     </div>
                 </div>
@@ -167,9 +206,13 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="card bg-white p-6 rounded-lg shadow">
                         <h3 class="text-xl font-bold mb-4">🍎 Log Meal</h3>
-                        <input type="text" id="mealName" placeholder="Meal name" class="border rounded px-3 py-2 w-full mb-3" autocomplete="off">
-                        <input type="number" id="mealCalories" min="0" placeholder="Calories" class="border rounded px-3 py-2 w-full mb-3">
-                        <button id="addMeal" class="bg-green-600 text-white px-6 py-2 rounded w-full hover:bg-orange-700 transition">Add Meal</button>
+                        <input type="text" id="mealName" placeholder="Meal name"
+                            class="border rounded px-3 py-2 w-full mb-3" autocomplete="off">
+                        <input type="number" id="mealCalories" min="0" placeholder="Calories"
+                            class="border rounded px-3 py-2 w-full mb-3">
+                        <button id="addMeal"
+                            class="bg-green-600 text-white px-6 py-2 rounded w-full hover:bg-orange-700 transition">Add
+                            Meal</button>
                     </div>
                     <div class="card bg-white p-6 rounded-lg shadow">
                         <h3 class="text-xl font-bold mb-4">📊 Calorie Balance</h3>
@@ -215,22 +258,28 @@
                         <div class="text-center">
                             <div id="timerDisplay" class="text-6xl font-bold mb-6">00:00</div>
                             <div class="flex gap-3 justify-center">
-                                <button id="startTimer" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition">Start</button>
-                                <button id="pauseTimer" class="bg-yellow-600 text-white px-6 py-2 rounded hover:bg-yellow-700 transition">Pause</button>
-                                <button id="resetTimer" class="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition">Reset</button>
+                                <button id="startTimer"
+                                    class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition">Start</button>
+                                <button id="pauseTimer"
+                                    class="bg-yellow-600 text-white px-6 py-2 rounded hover:bg-yellow-700 transition">Pause</button>
+                                <button id="resetTimer"
+                                    class="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition">Reset</button>
                             </div>
                         </div>
                     </div>
                     <div class="card bg-white p-6 rounded-lg shadow">
                         <h3 class="text-xl font-bold mb-4 text-green-600">⏲️ Rest Timer</h3>
-                        <input type="number" id="restSeconds" placeholder="Rest time (seconds)" class="border rounded px-3 py-2 w-full mb-3" value="60">
-                        <button id="startRest" class="bg-green-600 text-white px-6 py-2 rounded w-full hover:bg-green-700 transition mb-4">Start Rest Timer</button>
+                        <input type="number" id="restSeconds" placeholder="Rest time (seconds)"
+                            class="border rounded px-3 py-2 w-full mb-3" value="60">
+                        <button id="startRest"
+                            class="bg-green-600 text-white px-6 py-2 rounded w-full hover:bg-green-700 transition mb-4">Start
+                            Rest Timer</button>
                         <div id="restDisplay" class="text-4xl font-bold text-center">60s</div>
                     </div>
                 </div>
             </div>
 
-         <!-- Exercise cards will be loaded dynamically here -->
+            <!-- Exercise cards will be loaded dynamically here -->
             <div id="exercises" class="tab-content hidden">
                 <div class="card bg-white p-6 rounded-lg shadow mb-6">
                     <h3 class="text-xl font-bold mb-4">💪 Exercise Library</h3>
@@ -238,8 +287,11 @@
                 </div>
                 <div class="card bg-white p-6 rounded-lg shadow">
                     <h3 class="text-xl font-bold mb-4">📝 Notes</h3>
-                    <textarea id="workoutNotes" class="border rounded px-3 py-2 w-full h-32" placeholder="Track your progress, fatigue, observations..."></textarea>
-                    <button id="saveNotes" class="bg-blue-600 text-white px-6 py-2 rounded mt-3 hover:bg-blue-700 transition">Save Notes</button>
+                    <textarea id="workoutNotes" class="border rounded px-3 py-2 w-full h-32"
+                        placeholder="Track your progress, fatigue, observations..."></textarea>
+                    <button id="saveNotes"
+                        class="bg-blue-600 text-white px-6 py-2 rounded mt-3 hover:bg-blue-700 transition">Save
+                        Notes</button>
                 </div>
             </div>
 
@@ -248,5 +300,5 @@
 
     <script src="app.js"></script>
 </body>
-</html>
 
+</html>
