@@ -271,4 +271,7 @@ document.getElementById("saveNotes").addEventListener("click", () => {
 function setWorkoutLevel(level) {
   workoutLevel = level;
 }
+document.getElementById("levelSelect").addEventListener("change", e => {
+  setWorkoutLevel(e.target.value);
+});
 
