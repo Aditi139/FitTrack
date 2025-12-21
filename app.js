@@ -221,7 +221,7 @@ document.getElementById("calcBMR").addEventListener("click", () => {
     document.getElementById("bmrResult").textContent = `BMR: ${Math.round(bmr)}`;
 });
 
-// Starting main workout timer
+// Starting workout timer
 
 function format(sec) {
     const m = String(Math.floor(sec / 60)).padStart(2, "0");
