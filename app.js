@@ -274,4 +274,7 @@ function setWorkoutLevel(level) {
 document.getElementById("levelSelect").addEventListener("change", e => {
   setWorkoutLevel(e.target.value);
 });
+function calculateCalories(duration) {
+  return duration * 5;
+}
 
