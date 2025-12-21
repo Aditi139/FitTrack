@@ -277,4 +277,5 @@ document.getElementById("levelSelect").addEventListener("change", e => {
 function calculateCalories(duration) {
   return duration * 5;
 }
+workout.calories = calculateCalories(duration);
 
