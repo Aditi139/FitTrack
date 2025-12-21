@@ -66,31 +66,6 @@ git push origin experiment
 git log 
 
 🖼️ Screenshots 
-<img width="1920" height="1080" alt="Screenshot (339)" src="https://github.com/user-attachments/assets/88f538dd-940c-4bef-a9c9-813e9c4bdb45" />
-<img width="1920" height="1080" alt="Screenshot (340)" src="https://github.com/user-attachments/assets/92cd9194-7b36-4f1f-ab6c-e96d4e3afe8b" />
-<img width="1920" height="1080" alt="Screenshot (341)" src="https://github.com/user-attachments/assets/9fb8e47e-cfb6-481e-a241-512b6057c1c7" />
-<img width="1920" height="1080" alt="Screenshot (342)" src="https://github.com/user-attachments/assets/2f0a51b3-0555-426c-b46e-baa0160e0e76" />
-<img width="1920" height="1080" alt="Screenshot (343)" src="https://github.com/user-attachments/assets/356ca4fc-864c-422e-9bb8-c28c2dba06f3" />
-<img width="1920" height="1080" alt="Screenshot (344)" src="https://github.com/user-attachments/assets/124298b2-f4b7-4310-acb2-a05b980ba316" />
-<img width="1920" height="1080" alt="Screenshot (345)" src="https://github.com/user-attachments/assets/1ee9b161-f7ec-42e8-88ea-2bcc915e6510" />
-<img width="1920" height="1080" alt="Screenshot (346)" src="https://github.com/user-attachments/assets/b24bd0ee-98bd-4fa8-adbd-af634a3cbb99" />
-<img width="1920" height="1080" alt="Screenshot (347)" src="https://github.com/user-attachments/assets/d183377f-6920-4a96-9eb7-c079345427af" />
-<img width="1920" height="1080" alt="Screenshot (348)" src="https://github.com/user-attachments/assets/6162e45e-02a1-42e4-bcee-7146c57e934b" />
-<img width="1920" height="1080" alt="Screenshot (349)" src="https://github.com/user-attachments/assets/91d396e3-1ec2-4a5b-9b0d-9f99f9eb32fa" />
-<img width="1920" height="1080" alt="Screenshot (350)" src="https://github.com/user-attachments/assets/ca52146a-69d0-4f91-a136-1f15b761b152" />
-<img width="1920" height="1080" alt="Screenshot (351)" src="https://github.com/user-attachments/assets/d7462f40-aa14-4e55-b3ba-b0d0f51532aa" />
-<img width="1920" height="1080" alt="Screenshot (352)" src="https://github.com/user-attachments/assets/5a5ed802-3a95-4ab2-87de-0d2019554ecc" />
-<img width="1920" height="1080" alt="Screenshot (353)" src="https://github.com/user-attachments/assets/b900052d-4efc-4dc6-ba7b-1c36bc3c388f" />
-<img width="1920" height="1080" alt="Screenshot (354)" src="https://github.com/user-attachments/assets/f0174abe-011e-46d3-b024-429029cb1e5a" />
-<img width="1920" height="1080" alt="Screenshot (355)" src="https://github.com/user-attachments/assets/e5d96a56-b35b-45b7-9f43-b5cdaa053d9d" />
-<img width="1920" height="1080" alt="Screenshot (356)" src="https://github.com/user-attachments/assets/f9281eb8-b0cc-4fb5-b324-8e34053a235b" />
-<img width="1920" height="1080" alt="Screenshot (357)" src="https://github.com/user-attachments/assets/52b08ee8-f43d-4830-96e4-0b323ecd0502" />
-<img width="1920" height="1080" alt="Screenshot (358)" src="https://github.com/user-attachments/assets/24869454-f004-4ea9-87b0-c2aadf1c80db" />
-<img width="1920" height="1080" alt="Screenshot (359)" src="https://github.com/user-attachments/assets/5533cdac-a958-4e92-81cf-4020d439b102" />
-<img width="1920" height="1080" alt="Screenshot (360)" src="https://github.com/user-attachments/assets/a0041937-8c97-44cd-a496-253861cde8af" />
-<img width="1920" height="1080" alt="Screenshot (361)" src="https://github.com/user-attachments/assets/c43663f5-afdc-4d2b-bd3a-8d6f6284f700" />
-<img width="1920" height="1080" alt="Screenshot (362)" src="https://github.com/user-attachments/assets/af7ae5a2-6d2e-4c45-876c-c9d7e61f75e0" />
-
 
 
 ⚠️ Challenges Faced
