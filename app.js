@@ -53,7 +53,7 @@ function updateDashboard() {
 
     updateBadges();
     drawWeeklyChart();
-    console.log("Dashboard updated successfully");
+    console.log("Dashboard updated");
 
 }
 
