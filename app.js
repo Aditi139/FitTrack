@@ -7,6 +7,7 @@ let notes = "";
 let timerInterval;
 let restInterval;
 let timerSeconds = 0;
+let workoutLevel = "Beginner";
 
 // TAB SWITCHING 
 const tabButtons = document.querySelectorAll(".tab-btn");
