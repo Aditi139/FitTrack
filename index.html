@@ -59,11 +59,14 @@
 <body class="bg-white transition-colors duration-300">
     <div id="app" class="min-h-screen">
         <!-- Navigation -->
-        <nav class="bg-blue-600 text-white shadow-lg">
+        <nav class="bg-blue-600 text-white shadow-lg hover:bg-blue-700 transition">
             <div class="container mx-auto px-4 py-4 flex justify-between items-center">
                 <h1 class="text-3xl font-bold">💪 FitTrack Pro</h1>
+
+                <h1 class="text-2xl font-bold hover:text-black">💪 FitTrack Pro</h1>
+
                 <div class="flex gap-4 items-center">
-                    <span id="streakDisplay" class="bg-yellow-500 text-black px-3 py-1 rounded-full font-semibold">🔥 0
+                    <span id="streakDisplay" class="bg-yellow-500 text-black px-3 py-1 rounded-full font-semibold hover:bg-yellow-700">🔥 0
                         Day Streak</span>
                     <button id="darkModeToggle" class="bg-gray-800 px-4 py-2 rounded hover:bg-gray-700 transition">🌙
                         Dark</button>
@@ -74,19 +77,19 @@
         <!-- Tab Navigation -->
         <div class="container mx-auto px-4 mt-6">
             <div class="flex gap-2 overflow-x-auto pb-2">
-                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition hover:text-black"
                     data-tab="dashboard">Dashboard</button>
-                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition hover:text-black"
                     data-tab="calendar">Calendar</button>
-                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition hover:text-black"
                     data-tab="metrics">Metrics</button>
-                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition hover:text-black"
                     data-tab="calories">Calories</button>
-                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition hover:text-black"
                     data-tab="history">History</button>
-                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition hover:text-black"
                     data-tab="timer">Timer</button>
-                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+                <button class="tab-btn active bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition hover:text-black"
                     data-tab="exercises">Exercises</button>
             </div>
         </div>
@@ -103,8 +106,8 @@
                         <p id="weekWorkouts" class="text-4xl font-bold text-blue-600 hover:text-black">0</p>
                     </div>
                     <div class="card bg-white p-6 rounded-lg shadow text-red-600">
-                        <h3 class="text-lg font-semibold mb-2">🔥 Total Calories Burned</h3>
-                        <p id="totalCaloriesBurned" class="text-4xl font-bold text-red-600">0</p>
+                        <h3 class="text-lg font-semibold mb-2 hover:text-black">🔥 Total Calories Burned</h3>
+                        <p id="totalCaloriesBurned" class="text-4xl font-bold text-red-600 hover:text-black">0</p>
                     </div>
                     <div class="card bg-white p-6 rounded-lg shadow">
                         <h3 class="text-lg font-semibold mb-2">🎯 Current Level</h3>
