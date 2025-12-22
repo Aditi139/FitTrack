@@ -22,7 +22,7 @@ The repository reflects real-world version control practices with structured com
 git init
 
 
-3. Staging & Committing
+Staging & Committing
 git add index.html
 git add app.js
 git add .
@@ -34,20 +34,20 @@ git commit -m "message"
 ├── 📄 index.html
 ├── 📄 README.md
 
-5. Branching
+Branching
 git branch feature
 git branch test
 git branch bugfix
 git branch experiment
 
 
-7. Merging
+ Merging
 git merge feature
 git merge test
 git merge bugfix
 git merge experiment
 
-8. Merge Conflict Handling
+Merge Conflict Handling
 
 Commands during conflict:
 
@@ -56,18 +56,18 @@ git status
 git add <filename>
 git commit -m "Resolved merge conflict"
 
-6. Connecting to GitHub
+Connecting to GitHub
 git remote add origin url
 git branch -M main
 git push -u origin main
 
-7. Pushing Branches
+Pushing Branches
 git push origin feature
 git push origin test
 git push origin bugfix
 git push origin experiment
 
-8. Viewing Commit History
+Viewing Commit History
 git log 
 
 🖼️ Screenshots 
@@ -106,7 +106,7 @@ Ensuring every commit was meaningful and descriptive required discipline.
 Remembering to push all branches individually was a small but notable challenge:
 git push origin feature
 
-5. Structuring the README
+4. Structuring the README
    
 Creating clear documentation that includes intro, commands, screenshots, and reflections required careful organization.
 
