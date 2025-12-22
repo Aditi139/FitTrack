@@ -52,7 +52,7 @@ Merge Conflict Handling
 Commands during conflict:
 
 git status
-# manually fix <<<<<<< HEAD ... ======= ... >>>>>>>
+manually fix <<<<<<< HEAD ... ======= ... >>>>>>>
 git add <filename>
 git commit -m "Resolved merge conflict"
 
