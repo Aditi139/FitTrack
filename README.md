@@ -94,17 +94,12 @@ git log
 ⚠️ Challenges Faced
 1. Handling Merge Conflicts
 
-During merging the feature branch into main, Git detected conflicting changes in app.js.
+During merging the experiment branch into main, Git detected conflicting changes in index.html.
 Understanding conflict markers (<<<<<<<, =======, >>>>>>>) and manually resolving them was essential.
 
 2. Maintaining Clean Commit Messages
 
 Ensuring every commit was meaningful and descriptive required discipline.
-I followed a consistent pattern such as:
-feat: for new features
-fix: for bug fixes
-docs: for documentation
-chore: for general updates
 
 3. Pushing Multiple Branches
    
@@ -125,4 +120,4 @@ Performing merges and resolving conflicts
 Writing structured commit messages
 Using GitHub for remote collaboration
 Documenting the entire project professionally
-The Advanced Fitness Tracker project now follows proper version control practices and can be expanded further with confidence.
+The Fitness Tracker project now follows proper version control practices and can be expanded further with confidence.
